@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* RESET */
+* {margin: 0; padding: 0;
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal; border: none; outline: none; box-sizing: border-box;}
+img {max-width: 100%;}
+nav, ul {list-style: none; padding: 0px;}	
+a {text-decoration: none; cursor: pointer; opacity: 0.9;}
+a:hover {opacity: 1; color: #fff;}
+h2 {font-size: 1.5em; color: #333;}
+p {font-size: 1em; color: #777;}
+
+/* Header */
+header {background-color: rgb(201, 201, 201); width: 100%; position: fixed; 
+	padding: 15px 25px; top: 0; left: 0; z-index: 500;
+	display: flex; justify-content: space-between; align-items: center;} 
+header img {width: 200px;}
+header nav {display: flex;}
+header li {margin: 0 15px;}
+header li:first-child {margin-left: 0;}
+header li:last-child {margin-right: 0;}
+@media (max-width: 700px) {
+	header {flex-direction: column;}
+	header img {margin-bottom: 15px;}
+}
+
+.hero {background-image: url(./Imagens/DSC09697.JPG); background-size: cover; min-height: 100vh; 
+	display: flex; color: #fff; justify-content: center; align-items: center; 
+	flex-direction: column; text-align: center; padding-top: 95px;}
+.hero h1 {font-size: 2.8rem; margin-bottom: 15px;}
+.hero h3 {font-size: 1.9rem; margin-bottom: 15px;}
+.hero .btn { background-color: #fff ; border-radius: 4px; color:  #0d2453; 
+		padding: 15px 30px; text-transform: uppercase;}
+@media (max-width: 700px) {
+	.hero h1 {font-size: 2.0rem;}
+	.hero h3 {font-size: 1.2rem;}
+}
+
+.conheca {display: flex; flex-direction: column; align-items: center; padding: 50px 40px;}
+.conheca h3 {font-size: 2rem; margin-bottom: 25px; color: #0d2453; text-align: center;}
+.conheca p {max-width: 800px; margin-bottom: 25px; color: #0d2453; text-align: center;}
+.conheca hr {width: 200px; height: 2px; color: #0d2453; background-color: #0d2453; 
+	border: none; margin-bottom: 30px;}
+.conheca .grid {width: 100%; display: flex; flex-wrap: wrap;}
+.conheca .grid li {height: 350px; padding: 10px; border-radius: 4px; 
+	background-clip: content-box; background-size: cover; background-position: center;}
+.conheca .grid li.small {flex-basis: 40%;}
+.conheca .grid li.large {flex-basis: 60%;}
+@media (max-width: 700px) {
+	.conheca .grid li.small {flex-basis: 100%;}
+	.conheca .grid li.large {flex-basis: 100%;}
+}
+/* Serviços Executados */
+.servicos {background-color: #ccc; display: flex; flex-direction: column; align-items: center; padding: 50px 40px;}
+.servicos h3 {font-size: 2rem; margin-bottom: 15px; color: #0d2453; text-align: center;}
+.servicos p {max-width: 800px; margin-bottom: 15px; color: #0d2453; text-align: center;}
+.servicos hr {width: 200px; height: 2px; color: #0d2453; background-color: #0d2453; 
+	border: none; margin-bottom: 30px;}
+
+.servicos .grid {display: flex; width: 100%;}
+.servicos .grid li {padding: 0 30px; text-align: center;}
+.servicos .grid li i {font-size: 50px; margin-bottom: 10px; color: #0d2453;}
+.servicos .grid li h4 {font-size: 1.5rem; margin-bottom: 15px;}
+.servicos .grid li p {color: #000;}
+@media (max-width: 850px) {
+	.servicos .grid {flex-direction: column;}	
+}
+
+/* News Letter */
+.newsletter {background-color: lightslategray; 
+	padding: 20px 2%; border-radius: 0px; float: left;}
+.newsletter .contato {background-color: lightslategray; 
+	padding: 20px 2%; border-radius: 0px; 
+	float: left; width: 50%;}
+.newsletter .contato h3 {font-size: 1.6em; color: #fff;}
+
+.newsletter .contato p {font-size: 1em; color: #fff;}
+.newsletter .contato form {margin-top: 5px;}
+.newsletter .contato form input {margin-bottom: 10px; padding: 5px 5px; 
+	border: 1px solid #fff; 
+	border-radius: 5px; color: #000; background-color: #f5f5f5;}
+.newsletter .contato form input #assunto {max-width: 450px;}
+.newsletter .contato form input #nome {max-width: 250px;}
+.newsletter .contato h6 {font-size: 1rem; color:#fff}
+.newsletter .contato form textarea {color: rgb(146, 146, 146); border-radius: 4px;}
+.newsletter .contato button {width: 150px; background-color: #fff; padding: 10px 10px; 
+	border-radius: 5px; cursor: pointer;}
+.newsletter .foto {float: right; width: 50%;}
+.newsletter .foto a {max-width: 400px;}
+
+
+/* BarraInferior*/
+.barrainferior {float: left; width: 100%; display: flex; flex-wrap: wrap; flex-direction: row; 
+	background-color: #ccc7c7; justify-content: space-around;}
+
+/* Onde estamos */
+.onde-estamos {padding: 10px 10px;}
+.onde-estamos h2 {margin-bottom: 5px;}
+
+/* Mapa */
+.mapa iframe {height: 150px; margin: 10px 0;}
+
+/* Contatos */
+.contatos {padding: 10px 10px;}
+.contatos h3 {margin-bottom: 5px;}
+.contatos li {width: 100%; color: #777; margin-bottom: 10px;}
+.contatos li i {margin-right: 5px;}
+
+/* Rodape */
+.rodape {width: 100%; float: left; color: gray; padding: 10px 5px;}
+.rodape h4 {font-size: .7em; color: #000; }
+
+@media (max-width: 850px) {
+	.barrainferior {flex-direction: column;}
+	.barrainferior {align-items: center;}
+}
