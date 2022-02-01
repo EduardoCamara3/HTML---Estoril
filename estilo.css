@@ -15,7 +15,7 @@ p {font-size: 1em; color: #777;}
 header {background-color: rgb(201, 201, 201); width: 100%; position: fixed; 
 	padding: 15px 25px; top: 0; left: 0; z-index: 500;
 	display: flex; justify-content: space-between; align-items: center;} 
-header img {width: 200px;}
+header img {width: 100px;}
 header nav {display: flex;}
 header li {margin: 0 15px;}
 header li:first-child {margin-left: 0;}
