@@ -1,4 +1,7 @@
 @charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
 /* RESET */
 * {margin: 0; padding: 0;
 	font-size: 100%;
@@ -11,8 +14,30 @@ a:hover {opacity: 1; color: #fff;}
 h2 {font-size: 1.5em; color: #333;}
 p {font-size: 1em; color: #777;}
 
+/* Color Theme Swatches in Hex
+.Hotel-1-hex { color: #142B59; }
+.Hotel-2-hex { color: #102040; }
+.Hotel-3-hex { color: #16498C; }
+.Hotel-4-hex { color: #4B89BF; }
+.Hotel-5-hex { color: #94A1A6; }
+/* Color Theme Swatches in Hex 
+.color-theme_ { color: #033159; }
+.color-theme_ { color: #012840; }
+.color-theme_ { color: #F2F2F2; }
+.color-theme_ { color: #BFBFBF; }
+.color-theme_ { color: #8C8C8C; }
+*/
+
+:root {
+	--corazul1: #000055;
+	--corcinza1: #778899;
+
+	--fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+	--fonte-logo: 'Rock Salt', Arial, Verdana;
+}
+
 /* Header */
-header {background-color: rgb(201, 201, 201); width: 100%; position: fixed; 
+header {background-color: var(--corcinza1); width: 100%; position: fixed; 
 	padding: 15px 25px; top: 0; left: 0; z-index: 500;
 	display: flex; justify-content: space-between; align-items: center;} 
 header img {width: 100px;}
@@ -68,7 +93,7 @@ header li:last-child {margin-right: 0;}
 }
 
 /* News Letter */
-.newsletter {background-color: lightslategray; 
+.newsletter {background-color: #778899; 
 	padding: 20px 2%; border-radius: 0px; float: left;}
 .newsletter .contato {background-color: lightslategray; 
 	padding: 20px 2%; border-radius: 0px; 
